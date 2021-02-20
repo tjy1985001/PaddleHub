@@ -14,9 +14,9 @@ English | [简体中文](README_ch.md)
 
 ## Introduction
 - PaddleHub aims to provide developers with rich, high-quality, and directly usable pre-trained models.
-- **No need for deep learning background**，you can use AI models quickly and enjoy the dividends of the artificial intelligence era.
-- Covers 4 major categories of CV, NLP, Audio, and Video, and supports **one-click prediction**, **one-click service deployment** and **transfer learning**
-- All models are **OPEN SOURCE**, **FREE** for download and use in offline scenario.
+- **No need for deep learning background**, you can use AI models quickly and enjoy the dividends of the artificial intelligence era.
+- Covers 4 major categories of Image, Text, Audio, and Video, and supports **one-click prediction**, **easy service deployment** and **transfer learning**
+- All models are **OPEN SOURCE**, **FREE** to download and use them in offline scenario.
 
 ### Recent updates
 - **2020.12.1:** Release 2.0-beta1 version, migrate ERNIE, RoBERTa, BERT to dynamic graph mode. Add text classification fine-tune task based on large-scale pre-trained models.
@@ -28,7 +28,7 @@ English | [简体中文](README_ch.md)
 
 
 ## Features
-- **Abundant Pre-trained Models**: 180+ pre-trained models covering the four major categories of CV, NLP, Audio, and Video, all open source and free for download and offline usage.
+- **Abundant Pre-trained Models**: 180+ pre-trained models covering the 4 major categories including Image, Text, Audio, and Video, all open source and free for download and offline usage.
 - **Quick Model Prediction**: Model prediction can be realized through a few lines of scripts to quickly experience the model effect.
 - **Model As Service**: A one-line command to build deep learning model API service deployment capabilities.
 - **Easy-to-use Transfer Learning**: Just few lines of code you can complete the transfer-learning task like image classification and text classification based on high quality pre-trained models.
@@ -37,13 +37,15 @@ English | [简体中文](README_ch.md)
 ## Visualization Demo
 
 ### Text Recognition
-- Contains ultra-lightweight Chinese and English OCR models, high-precision Chinese and English, multilingual German, French, Japanese, Korean OCR recognition.
+- Contain ultra-lightweight Chinese and English OCR models, high-precision Chinese and English, multilingual German, French, Japanese, Korean OCR recognition.
+- Many thanks to CopyRight@[PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) for the pre-trained models, you can try to train your models with PadddleOCR.
 <div align="center">
 <img src="./docs/imgs/Readme_Related/Image_Ocr.gif"  width = "800" height = "400" />
 </div>
 
 ### Face Detection
 - Including face detection, mask face detection, multiple algorithms are optional.
+- Many thanks to CopyRight@[PaddleDetection](https://github.com/PaddlePaddle/PaddleDetection) for the pre-trained models, you can try to train your models with PadddleDetection.
 <div align="center">
 <img src="./docs/imgs/Readme_Related/Image_ObjectDetection_Face_Mask.gif"  width = "588" height = "400" />
 </div>
@@ -51,7 +53,7 @@ English | [简体中文](README_ch.md)
 ### Image Editing
 - 4x super resolution effect, multiple super resolution models are optional.
 - Colorization models can be used to repair old grayscale photos.
-
+- Many thanks to CopyRight@[PaddleGAN](https://github.com/PaddlePaddle/PaddleGAN) for the pre-trained models, you can try to train your models with PadddleGAN.
 <div align="center">
 <table>
     <thead>
@@ -77,49 +79,47 @@ English | [简体中文](README_ch.md)
 
 ### Object Detection
 - Pedestrian detection, vehicle detection, and more industrial-grade ultra-large-scale pretrained models are provided.
+- Many thanks to CopyRight@[PaddleDetection](https://github.com/PaddlePaddle/PaddleDetection) for the pre-trained models, you can try to train your models with PadddleDetection.
 <div align="center">
 <img src="./docs/imgs/Readme_Related/Image_ObjectDetection_Pedestrian_Vehicle.gif"  width = "642" height = "400" />
 </div>
 
 ### Key Point Detection
-- Supports body, face and hands key point detection for single or multiple person.
+- Support body, face and hands key point detection for single or multiple person.
+- Many thanks to CopyRight@[openpose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) for the pre-trained models.
 <div align="center">
 <img src="./docs/imgs/Readme_Related/Image_keypoint.gif"  width = "458" height = "400" />
 </div>
 
 ### Image Segmentation
 - High quality pixel-level portrait cutout model, ACE2P human body analysis world champion models are provided.
+- Many thanks to CopyRight@[PaddleSeg](https://github.com/PaddlePaddle/PaddleSeg) for the pre-trained models, you can try to train your models with PaddleSeg.
 <div align="center">
 <img src="./docs/imgs/Readme_Related/ImageSeg_Human.gif"  width = "642" height = "400" />
 </div>
 
-### Image Animation
-- Image style transfer models with Hayao Miyazaki and Makoto Shinkai styles, etc are provided
-<div align="center">
-<img src="./docs/imgs/Readme_Related/ImageGan_Anime.gif"  width = "642" height = "400" />
-</div>
-
 ### Image Classification
 - Various models like animal classification, dish classification, wild animal product classification are available.
+- Many thanks to CopyRight@[PaddleClas](https://github.com/PaddlePaddle/PaddleClas) for the pre-trained models, you can try to train your models with PadddleClas.
 <div align="center">
 <img src="./docs/imgs/Readme_Related/ImageClas_animal_dish_wild.gif"  width = "530" height = "400" />
 </div>
 
 ### Text Generation
 - AI poem writing, AI couplets, AI love words generation models are available.
+- Many thanks to CopyRight@[ERNIE](https://github.com/PaddlePaddle/ERNIE) for the pre-trained models, you can try to train your models with ERNIE.
 <div align="center">
 <img src="./docs/imgs/Readme_Related/Text_Textgen_poetry.gif"  width = "850" height = "400" />
 </div>
 
 ### Lexical Analysis
-- Excelent Chinese text segmentation, part-of-speech, named entity recognition model are provided by [LAC](https://github.com/baidu/LAC)
-@Baidu NLP
+- Excelent Chinese text segmentation, part-of-speech, named entity recognition model are provided by [LAC](https://github.com/baidu/LAC)@Baidu NLP.
 <div align="center">
 <img src="./docs/imgs/Readme_Related/Text_Lexical Analysis.png"  width = "640" height = "233" />
 </div>
 
 ### Syntactic Analysis
-- Leading Chinese syntactic analysis model are provided by Baidu NLP.
+- Leading Chinese syntactic analysis model are provided by [DDParser](https://github.com/baidu/DDParser)@Baidu NLP.
 <div align="center">
 <img src="./docs/imgs/Readme_Related/Text_SyntacticAnalysis.png"  width = "640" height = "301" />
 </div>
@@ -137,7 +137,8 @@ English | [简体中文](README_ch.md)
 </div>
 
 ### Speech Synthesis
-- TTS speech synthesis algorithm, multiple algorithms are available
+- TTS speech synthesis algorithm, multiple algorithms are available.
+- Many thanks to CopyRight@[Parakeet](https://github.com/PaddlePaddle/Parakeet) for the pre-trained models, you can try to train your models with Parakeet.
 - Input: `Life was like a box of chocolates, you never know what you're gonna get.`
 - The synthesis effect is as follows:
 <div align="center">
@@ -169,7 +170,8 @@ English | [简体中文](README_ch.md)
 </div>
 
 ### Video Classification
-- Short video classification trained via large-scale video dataset, supports 3000+ tag types prediction.
+- Short video classification trained via large-scale video datasets, supports 3000+ tag types prediction for short Form Videos.
+- Many thanks to CopyRight@[PaddleVideo](https://github.com/PaddlePaddle/PaddleVideo) for the pre-trained model, you can try to train your models with PaddleVideo.
 - `Example: Input a short video of swimming, the algorithm can output the result of "swimming"`
 <div align="center">
 <img src="./docs/imgs/Readme_Related/Text_Video.gif"  width = "400" height = "400" />

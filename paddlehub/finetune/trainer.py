@@ -81,8 +81,7 @@ class Trainer(object):
 
         if self.nranks > 1:
             paddle.distributed.init_parallel_env()
-            strategy = paddle.distributed.prepare_context()
-            self.model = paddle.DataParallel(self.model, strategy)
+            self.model = paddle.DataParallel(self.model)
         self.compare_metrics = self._compare_metrics if not compare_metrics else compare_metrics
         self._load_checkpoint()
 
@@ -313,7 +312,7 @@ class Trainer(object):
                 print_msg += ' avg_loss={:.4f}'.format(avg_loss)
 
             for metric, value in sum_metrics.items():
-                avg_metrics[metric] = value / num_samples
+                avg_metrics[metric] = float(value) / num_samples
                 print_msg += ' avg_{}={:.4f}'.format(metric, avg_metrics[metric])
 
             logger.eval(print_msg)
